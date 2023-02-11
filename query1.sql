@@ -8,5 +8,5 @@
 
 SELECT film_id FROM film 
 WHERE length = (SELECT MIN(length) FROM film)
-OR length = (SELECT MAX(length) FROM film)
+OR rental_duration = (SELECT MAX(rental_duration) FROM film)
 ORDER BY film_id DESC; 
