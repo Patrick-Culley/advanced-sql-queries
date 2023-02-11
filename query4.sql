@@ -1,8 +1,6 @@
 -- Find the first_name and last_name of all actors who have never been in an Animation film.
 -- Order by the actor_id in ascending order.
 
--- Put your query for q4 here
-
 SELECT actor.actor_id, actor.first_name, actor.last_name FROM actor
 JOIN film_actor ON actor.actor_id = film_actor.actor_id
 AND actor.actor_id NOT IN
